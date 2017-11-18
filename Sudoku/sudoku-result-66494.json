@@ -1,0 +1,28 @@
+{
+    "tests": [
+        {
+            "description": "the solve method produces a valid solution.",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 239, in solve\n    values = search(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 222, in search\n    attempt = search(new_values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 222, in search\n    attempt = search(new_values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 222, in search\n    attempt = search(new_values)\n  [Previous line repeated 5 more times]\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 209, in search\n    values = reduce_puzzle(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 193, in reduce_puzzle\n    values = naked_twins(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 77, in naked_twins\n    naked_twins(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 77, in naked_twins\n    naked_twins(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 77, in naked_twins\n    naked_twins(values)\n  File \"/home/vmuser_qawhzuos/workspace/solution.py\", line 70, in naked_twins\n    assign_value(values,box,values[box].replace(values[key][0],'').replace(values[key][1],''))\nIndexError: string index out of range\n",
+            "message": null,
+            "advice": "Try your code on the following example:\n9.1....8.8.5.7..4.2.4....6...7......5..............83.3..6......9................\n",
+            "result": "E",
+            "rubric_item_id": "5530"
+        },
+        {
+            "description": "the naked_twins method applies the 'naked twins' heuristic.",
+            "traceback": "",
+            "message": null,
+            "advice": null,
+            "result": ".",
+            "rubric_item_id": "5531"
+        },
+        {
+            "description": "the README has been modified.",
+            "traceback": "",
+            "message": null,
+            "advice": null,
+            "result": ".",
+            "rubric_item_id": null
+        }
+    ]
+}
